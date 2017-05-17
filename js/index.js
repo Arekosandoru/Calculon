@@ -8,7 +8,6 @@ $(document).ready(function() {
     })
 });
 
-
 function isDlc(buttonText) {
     return "\u00B1" == buttonText;
 }

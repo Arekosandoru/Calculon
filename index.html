@@ -3,64 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Very Bad Calc</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-    <script src="js/index.js "></script>
+    <script src="js/index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-    <div data-role="page" class="mainFrame1">
-        <div class="mainFrame">
-            <div class="calcDisplay">
-                <div data-role="fieldcontain">
-                    <div data-role="fieldcontain">
-                        <label for="display"></label>
-                        <textarea class="Answertextarea" cols="20" rows="10" name="display" id="display" readonly disabled></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="calculus text-center">
-                <div class="buttonsGroup btn-group" style="margin-left: 2px;">
-                    <button class="btn btn-default" id="clearall">C</button>
-                    <button class="btn btn-default" id="clear">CE</button>
-                    <button class="btn btn-default">/</button>
-                    <button class="btn btn-default">*</button>
-                </div>
-                <br>
-                <div class="buttons btn-group">
-                    <button class="btn btn-default">7</button>
-                    <button class="btn btn-default">8</button>
-                    <button class="btn btn-default">9</button>
-                    <button class="btn btn-default">-</button>
-                </div>
-                <br>
-                <div class="buttons btn-group" style="margin-left: -3px;">
-                    <button class="btn btn-default">4</button>
-                    <button class="btn btn-default">5</button>
-                    <button class="btn btn-default">6</button>
-                    <button class="btn btn-default">+</button>
-                </div>
-                <br>
-                <div class="buttons btn-group" style="margin-left: -48px;">
-                    <button class="btn btn-default">1</button>
-                    <button class="btn btn-default">2</button>
-                    <button class="btn btn-default">3</button>
-                </div>
-                <br>
-                <div class="buttons btn-group">
-                    <button class="btn btn-default">&plusmn;</button>
-                    <button class="btn btn-default">0</button>
-                    <button class="btn btn-default">.</button>
-                    <button class="btn btn-default" style="height: 100px; margin-top: -50px;" id="equals">=</button>
-                </div>
+  <div class="mainWrap">
+    <div class="calc-display">
+        <div>
+            <div>
+                <label for="display"></label>
+                <textarea id="display" class="answer-text-area" cols="20" rows="9" name="display" readonly disabled></textarea>
             </div>
         </div>
     </div>
+    <div class="calculus text-center">
+        <div class="buttonsGroup btn-group blinchik">
+          <button id="clearall" class="btn btn-default" >C</button>
+          <button id="clear" class="btn btn-default" >CE</button>
+          <button class="btn btn-default">/</button>
+          <button class="btn btn-default">*</button>
+        </div>
+        <br>
+        <div class="buttons btn-group">
+          <button class="btn btn-default">7</button>
+          <button class="btn btn-default">8</button>
+          <button class="btn btn-default">9</button>
+          <button class="btn btn-default">-</button>
+        </div>
+        <br>
+        <div class="buttons btn-group pirojok">
+          <button class="btn btn-default">4</button>
+          <button class="btn btn-default">5</button>
+          <button class="btn btn-default">6</button>
+          <button class="btn btn-default">+</button>
+        </div>
+        <br>
+        <div class="buttons btn-group cheburek">
+          <button class="btn btn-default">1</button>
+          <button class="btn btn-default">2</button>
+          <button class="btn btn-default">3</button>
+        </div>
+        <br>
+        <div class="buttons btn-group">
+          <button class="btn btn-default">&plusmn;</button>
+          <button class="btn btn-default">0</button>
+          <button class="btn btn-default">.</button>
+          <button id="equals" class="btn btn-default equals">=</button>
+        </div>
+    </div>
+  </div>
+  <div class="footer navbar-fixed-bottom">
+    <p class="text-center">Made By <a href="">Arekosandoru</a></p>
+  </div>
 </body>
-
 </html>
