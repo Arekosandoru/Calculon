@@ -1,28 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
 body {
-    font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 .btn {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .calc-display p {
-    width: 170px;
-    margin: 0 auto;
-    margin-bottom: 5px;
+  width: 170px;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
 .mainWrap {
-    width: 251px;
-    height: 201px;
-    margin: 0 auto;
-    margin-top: 150px;
+  width: 251px;
+  height: 201px;
+  margin: 0 auto;
+  margin-top: 150px;
 }
 .mainWrap:focus {
-    outline: none;
+  outline: none;
 }
 textarea.answer-text-area {
-    width: 84%;
-    margin-left: 22px;
+  width: 78%;
+  margin-left: 27px;
 }
 .ui-page-active:focus {
   outline: none !important;
