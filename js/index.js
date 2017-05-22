@@ -4,8 +4,8 @@ var JohnDorian;
 $(document).ready(function() {
     JohnDorian = $('#display');
     $("button").bind('tap', function() {
-        buttonPressed()
-    })
+        buttonPressed();
+    });
 });
 
 function isDlc(buttonText) {
