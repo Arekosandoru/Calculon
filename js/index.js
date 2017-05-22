@@ -47,6 +47,7 @@ function backSpace() {
 function result() {
     try {
         var newDisplay = eval(JohnDorian.val());
+        $('.story-anchor').after('<p>'+ JohnDorian.val() +'</p>').fadeIn('slow');
         JohnDorian.val(newDisplay);
     } catch (error) {
         JohnDorian.val("Error");
@@ -54,7 +55,6 @@ function result() {
 }
 
 function buttonPressed() {
-    console.log('pressed');
     var buttonText = event.target.innerText;
 
     if (isEqual(buttonText)) {
