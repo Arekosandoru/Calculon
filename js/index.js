@@ -1,11 +1,13 @@
 'use strict'
 var JohnDorian;
+$.mobile.autoInitializePage = false;
 
 $(document).ready(function() {
     JohnDorian = $('#display');
     $("button").bind('tap', function() {
         buttonPressed();
     });
+
 });
 
 function isDlc(buttonText) {
