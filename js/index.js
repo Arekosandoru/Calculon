@@ -1,6 +1,6 @@
 'use strict'
 var JohnDorian;
-$.mobile.autoInitializePage = false;
+// $.mobile.autoInitializePage = false;
 
 $(document).ready(function() {
     JohnDorian = $('#display');
