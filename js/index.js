@@ -1,13 +1,11 @@
 'use strict'
-var JohnDorian;
-// $.mobile.autoInitializePage = false;
+var resultFrame;
 
 $(document).ready(function() {
-    JohnDorian = $('#display');
+    resultFrame = $('#display');
     $("button").bind('tap', function() {
         buttonPressed();
     });
-
 });
 
 function isDlc(buttonText) {
@@ -27,30 +25,30 @@ function isEqual(buttonText) {
 }
 
 function display(buttonText) {
-    var newDisplay = JohnDorian.val() + buttonText;
-    JohnDorian.val(newDisplay);
+    var newDisplay = resultFrame.val() + buttonText;
+    resultFrame.val(newDisplay);
 }
 
 function clear() {
-    JohnDorian.val("");
+    resultFrame.val("");
 }
 
 function backSpace() {
-    var display = JohnDorian.val();
+    var display = resultFrame.val();
 
     if (display.length > 0) {
         var newDisplay = display.substr(0, display.length - 1);
-        JohnDorian.val(newDisplay);
+        resultFrame.val(newDisplay);
     }
 }
 
 function result() {
     try {
-        var newDisplay = eval(JohnDorian.val());
-        $('.story-anchor').after('<p>'+ JohnDorian.val() +'</p>').fadeIn('slow');
-        JohnDorian.val(newDisplay);
+        var newDisplay = eval(resultFrame.val());
+        $('.story-anchor').after('<p>'+ resultFrame.val() + ' = ' + newDisplay +'</p>').fadeIn('slow');
+        resultFrame.val(newDisplay);
     } catch (error) {
-        JohnDorian.val("Error");
+        resultFrame.val("Error");
     }
 }
 
